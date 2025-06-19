@@ -27,13 +27,13 @@ Identify which ports are open on your router or another device.
 
 nmap -sV 192.168.0.1
 
-3. Check Network Connections on Your Machine
+3. **Check Network Connections on Your Machine**
 
 Use netstat or ss to review all open connections.
 
 netstat -tulnp
 
-4. Inspect DNS and IP Configuration
+4. **Inspect DNS and IP Configuration**
 
 Look up IP and DNS info to verify if anything seems misconfigured or suspicious.
 
@@ -41,7 +41,7 @@ whois example.com
 dig example.com
 traceroute example.com
 arp -a
-5. Review Your Router Settings (Manually via Dashboard)
+5. **Review Your Router Settings (Manually via Dashboard)**
 
 Login to your router (typically http://192.168.0.1 or http://192.168.1.1) and check for:
 
@@ -53,7 +53,7 @@ UPnP enabled (disable if not needed)
 
 Outdated firmware (update if available)
 
-6. Analyze Traffic (Optional – for learning only)
+6. **Analyze Traffic (Optional – for learning only)**
 
 Open Wireshark and capture some packets from your Wi-Fi interface.
 
