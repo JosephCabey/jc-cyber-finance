@@ -64,3 +64,20 @@ If yes, it’s likely harmless — but you should still label and monitor it.
 ---
 
 📁 Part of the `home-wifi-audit` module in the `security-playground` repo
+
+<!--
+📝 User Note: Real-World Discovery — Espressif Device Identified
+
+During a routine Wi-Fi audit, an unknown device named "espressif" appeared on the network with generic branding and no operating system listed. Initial concern was that this could be an unauthorized IoT device or a spoofed intrusion.
+
+After a detailed troubleshooting process, it was discovered that the device corresponded to a **60-gallon Aqueon OptiBright LED aquarium light**, which connects to Wi-Fi for remote control via mobile app.
+
+✅ Action Taken:
+- Verified device MAC address and behavior
+- Renamed the device to `Aqueon OptiBright LED` for clarity
+- Left the host name as `espressif` (hardcoded in firmware)
+- Confirmed no malicious activity; device is legitimate
+
+🔐 Takeaway:
+Always investigate unfamiliar devices thoroughly. Even smart lights, aquarium gear, and plugs can appear under generic labels. Label known devices and monitor your network regularly.
+-->
