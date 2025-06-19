@@ -41,6 +41,7 @@ whois example.com
 dig example.com
 traceroute example.com
 arp -a
+
 5. **Review Your Router Settings (Manually via Dashboard)**
 
 Login to your router (typically http://192.168.0.1 or http://192.168.1.1) and check for:
