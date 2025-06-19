@@ -39,3 +39,44 @@ Copy and paste this template for each new device you investigate:
 | **Action Taken**      | [Paused / Renamed / Blocked / Ignored] |
 | **Follow-up Needed?** | [Yes/No + any notes]           |
 
+---
+
+## ❓ FAQ: Why Does One Device Show Up with Multiple MAC Addresses?
+
+### 💬 Can the same device appear twice on my network?
+Yes. It’s completely normal for a single device (like a laptop) to appear multiple times with different MAC addresses. This happens when the device has **multiple network interfaces** or uses **MAC randomization**.
+
+---
+
+### 🔄 What causes this behavior?
+Here are the most common reasons:
+
+| Reason                       | Explanation                                                                 |
+|-----------------------------|-----------------------------------------------------------------------------|
+| **Multiple adapters**        | Devices have separate MACs for Wi-Fi, Ethernet, and virtual interfaces     |
+| **VPN usage**               | VPN clients often create virtual adapters with unique MACs                 |
+| **MAC randomization**       | OS features (like in Windows 10/11, iOS, Android) that rotate MACs by network |
+| **Enterprise configuration** | Company laptops may mask hostnames or rotate MACs for security            |
+
+---
+
+### 🧠 Example: Morgan Stanley Work Laptop
+If you used a company-issued Lenovo ThinkPad connected to your home network:
+- It might appear as `E-LPWPF3W5NX9` under one MAC
+- And `E-LPWPF3TZ5WG` under another, when connected via VPN or Ethernet
+
+Both entries are tied to the **same physical device**, but your router sees them as separate because of interface-level differences.
+
+---
+
+### ✅ What should I do when I see this?
+- **Look up the MAC address** using a tool like [https://macvendors.com](https://macvendors.com)
+- If both belong to the same vendor (e.g., Intel or Lenovo), and match your usage patterns, log them under the same device in your investigation log
+- Rename them for clarity, like:
+  - `Lenovo Wi-Fi Adapter`
+  - `Lenovo VPN Adapter`
+- You can also **pause/block** one to see if it impacts a known device
+
+---
+
+> Keeping this log organized with context makes your Wi-Fi audits more secure, less confusing, and easier to revisit in the future.
