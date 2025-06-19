@@ -1,1 +1,105 @@
+# 🛡️ Potential Router Hack Checklist
 
+Use this guide if you suspect someone may have accessed your home router without your permission. Follow each step to identify suspicious activity, secure your network, and regain control.
+
+---
+
+## 🔍 Signs You May Have Been Hacked
+
+- You **can’t log into your router** with the default or known admin credentials
+- The **Wi-Fi network name or password has changed** unexpectedly
+- You notice **unknown devices** connected to your network
+- Internet speed has slowed down **dramatically or suddenly**
+- The router admin interface **locks you out after failed login attempts**
+- Settings in the Xfinity app **don’t match what you configured**
+
+---
+
+## 🧭 What To Do Right Away
+
+### ✅ Step 1: Check Connected Devices
+- Open the **Xfinity app**
+- Go to **Connect > Devices**
+- Review each connected device
+- Pause or block anything unfamiliar
+
+---
+
+### ✅ Step 2: Change Your Wi-Fi Password
+- In the Xfinity app, go to:
+  - **Wi-Fi Settings**
+  - Rename your network (optional)
+  - Set a **strong new password**
+
+> This will disconnect all devices, so only authorized users will reconnect.
+
+---
+
+### ✅ Step 3: Try Logging Into the Router Again
+Go to `http://10.0.0.1` or `http://192.168.0.1` in a browser.
+
+Try:
+```text
+Username: admin
+Password: password
+
+Other possibilities:
+
+Username: comcast / Password: 1234
+
+Username: admin / Password: your Wi-Fi password
+
+Password based on serial number or MAC address from the router label
+
+🔁 Step 4: Factory Reset the Router (if needed)
+If all login attempts fail, reset the router to restore factory settings:
+
+Locate the reset pinhole on the back
+
+Hold a paperclip in for 15–30 seconds
+
+Wait 3–5 minutes for full reboot
+
+Then try:
+
+text
+Copy
+Edit
+Username: admin
+Password: password
+
+---
+
+## 🔧 After Regaining Access — Secure Your Router
+
+Once you're in, immediately take these steps to secure your network:
+
+- 🔑 Change the **admin password** to something strong and unique
+- 🔒 Use **WPA2** or **WPA3** encryption
+- 🚫 Disable **WPS** (Wi-Fi Protected Setup)
+- 🧩 Optionally change the router’s IP address (e.g., from `10.0.0.1` to `10.0.0.88`)
+
+---
+
+## 🧠 Pro Tips
+
+| Task                        | Tool/Place                    |
+|-----------------------------|-------------------------------|
+| Check firmware updates      | Router admin panel or app     |
+| Rename Wi-Fi                | Xfinity app or admin panel    |
+| Block unknown devices       | Xfinity app                   |
+| See router model & serial   | Label on bottom/back of router|
+| Monitor login attempts      | Router logs (if available)    |
+
+---
+
+## 🧾 Keep a Log
+
+Track important security-related changes in a simple notebook or `.txt` file:
+- ✅ When you changed your router/Wi-Fi password
+- ❌ Devices you paused or blocked
+- ⚠️ Dates and times of suspicious activity
+
+---
+
+> Stay safe and audit your network regularly. Knowledge is your best defense! 🧠🔒
