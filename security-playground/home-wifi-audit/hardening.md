@@ -1,22 +1,22 @@
 # 🔐 Router & IoT Device Hardening Guide
 
-This guide outlines best practices to secure your home router and IoT (Internet of Things) devices against common threats. These steps help reduce your network’s attack surface and improve overall security.
+This guide provides best practices for securing home routers and IoT (Internet of Things) devices. These steps help reduce the attack surface and protect your network from common threats.
 
 ---
 
 ## 📡 Router Hardening
 
 ### 1. Change Default Credentials
-- Replace default admin username and password.
+- Replace the default admin username and password immediately.
 - Use a strong, unique password with a mix of letters, numbers, and symbols.
 
 ### 2. Update Firmware Regularly
-- Check your router dashboard for firmware updates.
-- Apply patches to fix known vulnerabilities.
+- Log in to your router dashboard and check for firmware updates.
+- Apply patches to fix known vulnerabilities as soon as they're available.
 
 ### 3. Use Strong Encryption
-- Set Wi-Fi security to **WPA2** or **WPA3**.
-- Avoid WEP and WPA (they are insecure and easily cracked).
+- Set your Wi-Fi security to **WPA2** or **WPA3**.
+- Avoid outdated standards like **WEP** and **WPA**, which are easily cracked.
 
 ### 4. Disable WPS (Wi-Fi Protected Setup)
 - WPS is vulnerable to brute-force attacks.
@@ -24,58 +24,64 @@ This guide outlines best practices to secure your home router and IoT (Internet 
 
 ### 5. Turn Off Remote Management
 - Disable remote access unless absolutely necessary.
-- Only allow local configuration access via Ethernet or secure Wi-Fi.
+- Only allow configuration changes from devices connected locally via Ethernet or secured Wi-Fi.
 
 ### 6. Disable Unused Services
-- UPnP (Universal Plug and Play)  
-- Telnet  
-- FTP  
-These services can open unwanted ports or expose control to outside devices.
+Turn off services that are not required, such as:
+- **UPnP (Universal Plug and Play)**
+- **Telnet**
+- **FTP**
 
-### 7. Set a Guest Network (Optional)
-- Isolate IoT devices or guests from your main network.
-- Limit their access to sensitive devices or file shares.
+These can expose your router to unnecessary risk and open unexpected ports.
+
+### 7. Set Up a Guest Network (Optional)
+- Use a separate guest network for IoT devices and visitors.
+- This isolates untrusted devices from your primary home network and sensitive systems.
 
 ### 8. Change the Default Network Name (SSID)
-- Avoid using names that reveal your router model or personal info.
-- Example: Avoid `NETGEAR123` or `JohnsWiFiHome`.
+- Avoid using a network name that reveals your router brand or personal information.
+- For example, avoid `NETGEAR123`, `JohnsWiFiHome`, or `MercedesGuestWiFi`.
+- **Why?** Identifiable SSIDs can make it easier for attackers to:
+  - Determine your router model (and known vulnerabilities)
+  - Guess your password pattern
+  - Target your home based on perceived wealth
 
 ---
 
 ## 📱 IoT Device Hardening
 
 ### 1. Update Device Firmware
-- Keep smart plugs, cameras, thermostats, etc. up to date.
-- Use manufacturer apps or portals to check for updates.
+- Regularly update firmware on smart plugs, cameras, thermostats, etc.
+- Use the manufacturer’s app or web portal to check for updates.
 
 ### 2. Change Default Passwords
-- Most IoT devices ship with weak, predictable logins.
-- Use a password manager to assign unique credentials per device.
+- IoT devices often ship with generic credentials like `admin/admin`.
+- Change these immediately and use a password manager to store secure, unique passwords.
 
 ### 3. Isolate IoT Devices
-- Use a **separate VLAN** or **guest network** if your router supports it.
-- Prevent them from accessing computers, NAS drives, or private files.
+- Place IoT devices on a **guest network** or **separate VLAN** if supported.
+- Prevent them from accessing computers, servers, or other private devices on your network.
 
 ### 4. Disable Unused Features
-- Turn off unused cloud integration, voice assistants, or remote access.
-- Reduce the number of internet-facing features whenever possible.
+- Turn off unnecessary cloud services, voice assistants, and remote access options.
+- Fewer features = fewer ways for attackers to get in.
 
 ### 5. Monitor Device Behavior
-- Periodically check what IPs your devices are connecting to.
-- Use router logs or tools like `nmap` and `Wireshark` to analyze traffic.
+- Periodically check which IP addresses your devices are connecting to.
+- Use tools like `nmap`, your router’s admin panel, or `Wireshark` to review traffic.
 
 ---
 
 ## 🧠 General Best Practices
 
-- Enable a **firewall** on your router (usually on by default).
-- Turn off router **SSID broadcasting** if you want to limit visibility (optional).
-- Periodically audit your network with tools from this project.
-- Consider setting up **device alerts** if new hardware connects to your network.
+- ✅ Enable your router’s built-in firewall (should be on by default).
+- 🚫 Turn off SSID broadcasting if you want to limit visibility (optional).
+- 🕵️‍♂️ Periodically scan your network using tools from the [Home Wi-Fi Audit](./README.md).
+- 📳 Enable alerts for when new devices connect to your network, if supported by your router.
 
 ---
 
-> ⚠️ **Note:** IoT devices are often built with minimal security — treat them as untrusted and segment your network when possible.
+> ⚠️ **Note:** IoT devices often prioritize convenience over security. Always treat them as potentially untrusted and keep them separated from critical systems.
 
 ---
 
@@ -84,5 +90,4 @@ These services can open unwanted ports or expose control to outside devices.
 - [OWASP IoT Security Guidelines](https://owasp.org/www-project-internet-of-things/)
 - [US-CERT Home Network Security Tips](https://www.cisa.gov/news-events/news/home-network-security)
 - [RouterSecurity.org](https://routersecurity.org)
-
 
