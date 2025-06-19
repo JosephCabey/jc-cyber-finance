@@ -23,9 +23,10 @@ Flip your router over or look at the back panel. You’ll typically find:
 http://192.168.0.1
 http://192.168.1.1
 http://192.168.1.254
+Or try http://10.0.0.1 for Xfinity routers
 
-3. Enter the router’s **admin username and password** (found on the label or previously configured).
-4. Once inside, you should see:
+4. Enter the router’s **admin username and password** (found on the label or previously configured).
+5. Once inside, you should see:
    - **Router brand and model**
    - **Firmware version**
    - **Wireless and network settings**
