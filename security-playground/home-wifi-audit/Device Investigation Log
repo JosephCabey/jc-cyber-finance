@@ -1,1 +1,41 @@
+# 📓 Device Investigation Log
+
+A running log to track unidentified, suspicious, or unfamiliar devices detected on your home Wi-Fi network. Useful for auditing, confirming legitimate devices, and identifying potential intrusions.
+
+---
+
+## 🧩 Example Entry: E-LPWPF3W5NX9
+
+| Field                | Details                                                             |
+|----------------------|----------------------------------------------------------------------|
+| **Device Name**       | E-LPWPF3W5NX9                                                       |
+| **Last Connected**    | 4/26/25                                                             |
+| **MAC Address**       | [Insert from Xfinity App]                                           |
+| **Vendor (via MAC lookup)** | Likely Lenovo / Intel                                        |
+| **Connection Type**   | Wi-Fi                                                               |
+| **Known or Unknown?** | Initially unknown                                                   |
+| **Investigation Summary** | Suspected to be former Morgan Stanley Lenovo laptop used with enterprise VPN. The naming convention and masked hostname are consistent with enterprise-managed Windows devices. |
+| **Action Taken**      | Renamed to `Old Lenovo - Morgan Stanley`, paused device, monitoring for future connection |
+| **Follow-up Needed?** | No                                                                 |
+
+---
+
+## 🧩 Template for New Entries
+
+Copy and paste this template for each new device you investigate:
+
+```markdown
+## 🧩 Device Investigation: [Device Name]
+
+| Field                | Details                         |
+|----------------------|----------------------------------|
+| **Device Name**       | [e.g., E-LPXYZ123456]           |
+| **Last Connected**    | [Date]                         |
+| **MAC Address**       | [Found in router or Xfinity app] |
+| **Vendor (via MAC lookup)** | [e.g., Espressif, Lenovo, Apple] |
+| **Connection Type**   | [Wi-Fi or Ethernet]            |
+| **Known or Unknown?** | [Unknown / Suspected / Confirmed] |
+| **Investigation Summary** | [Steps taken to identify the device, context, behavior] |
+| **Action Taken**      | [Paused / Renamed / Blocked / Ignored] |
+| **Follow-up Needed?** | [Yes/No + any notes]           |
 
