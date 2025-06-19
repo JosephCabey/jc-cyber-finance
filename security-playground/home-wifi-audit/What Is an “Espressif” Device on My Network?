@@ -1,0 +1,66 @@
+# 🛰️ What Is an “Espressif” Device on My Network?
+
+If you see a device connected to your network with the name `espressif`, brand `Generic`, model `IoT Device`, and no listed operating system — you’re likely dealing with a Wi-Fi-enabled **Internet of Things (IoT)** device.
+
+---
+
+## 🔍 What Is Espressif?
+
+**Espressif Systems** is a company that manufactures popular microchips such as:
+- **ESP8266**
+- **ESP32**
+
+These chips are built into a wide range of **smart home gadgets**, such as:
+- Smart plugs or light bulbs
+- Wi-Fi cameras or doorbells
+- Smart switches or outlets
+- Voice assistants (some Alexa/Echo devices)
+- IoT hobby boards like Arduino or Raspberry Pi add-ons
+
+---
+
+## 🔎 How to Investigate the Device
+
+### 1. Check the MAC Address
+- Go to your **Xfinity app** or router admin page
+- Locate the **MAC address** of the "espressif" device
+- Enter it into a tool like [https://macvendors.com/](https://macvendors.com/)
+  - If it shows **Espressif Inc.**, it’s legit hardware from that vendor
+
+---
+
+### 2. Ask Yourself:
+- Did you recently set up any smart home or IoT device?
+- Do you own a robot vacuum, smart plug, smart bulb, or Echo Dot?
+- Did a guest bring a device over?
+
+If yes, it’s likely harmless — but you should still label and monitor it.
+
+---
+
+## 🚨 What to Do If You’re Unsure
+
+| Action                         | Purpose                            |
+|--------------------------------|-------------------------------------|
+| **Pause the device** (via Xfinity app) | See what stops working                |
+| **Rename the device**           | Make future tracking easier         |
+| **Block the device**            | If you can’t identify it            |
+| **Monitor traffic**             | Use tools like `Wireshark` or `Fing`|
+
+---
+
+## 🧠 Best Practices
+
+- **Disable WPS** on your router
+- **Change your Wi-Fi password** if this device appeared suddenly
+- **Use strong WPA2/WPA3 encryption**
+- Keep your router’s **firmware updated**
+- Label known devices in your network for easy reference
+
+---
+
+> If you don’t have any smart home devices and an Espressif device appears — it might be an **unauthorized connection attempt**. Take action immediately to secure your network.
+
+---
+
+📁 Part of the `home-wifi-audit` module in the `security-playground` repo
