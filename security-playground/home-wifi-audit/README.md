@@ -72,7 +72,7 @@ Router Web UI – for config inspection
 
 Wireshark – for optional, ethical packet analysis
 
-🧠 What I Learned
+**🧠 What I Learned**
 How to scan and map devices on a local network
 
 The importance of strong router passwords and updated firmware
