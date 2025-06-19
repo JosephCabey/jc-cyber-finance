@@ -21,7 +21,7 @@ This audit focuses on:
    - Use `nmap` to scan your local IP range and list all connected devices.
    ```bash
    nmap -sn 192.168.0.0/24
-2. Scan for Open Ports and Running Services
+2. **Scan for Open Ports and Running Services**
 
 Identify which ports are open on your router or another device.
 
