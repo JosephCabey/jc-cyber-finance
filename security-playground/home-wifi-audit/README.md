@@ -61,7 +61,8 @@ Filter by protocols like HTTP, DNS, or ARP to analyze patterns.
 
 Do not capture other people’s private data — stay ethical.
 
-⚙️ Tools Used
+**⚙️ Tools Used**
+
 nmap – for network and port scanning
 
 netstat / ss – for viewing local open connections
@@ -73,6 +74,7 @@ Router Web UI – for config inspection
 Wireshark – for optional, ethical packet analysis
 
 **🧠 What I Learned**
+
 How to scan and map devices on a local network
 
 The importance of strong router passwords and updated firmware
